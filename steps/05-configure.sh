@@ -56,6 +56,10 @@ mkdir -p "$BUILD"
       else
         echo 'ios_deployment_target = "15.0"'
       fi
+      # The SDKs of Xcode 27 (iOS devices, macOS for the host tools) list
+      # arm64e.x1 targets in their stubs, which this branch's lld cannot
+      # read: link with Apple's linker instead.
+      echo "use_lld = false"
       echo "ios_enable_code_signing = false"
       echo "use_blink = true"
       [ "$ENABLE_V8" == "true" ] && [ "$TARGET_CPU" == "arm64" ] && echo 'arm_control_flow_integrity = "none"'

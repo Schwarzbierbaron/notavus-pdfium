@@ -37,6 +37,7 @@ case "$OS" in
 
   ios)
     apply_patch "$PATCHES/ios/pdfium.patch"
+    apply_patch "$PATCHES/ios/build.patch" build
     [ "$ENABLE_V8" == "true" ] && apply_patch "$PATCHES/ios/v8.patch" v8
     ;;
 
