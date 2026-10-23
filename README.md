@@ -1,3 +1,8 @@
+> **Notavus:** this copy of [bblanchon/pdfium-binaries](https://github.com/bblanchon/pdfium-binaries)
+> builds the iOS packages of PDFium with iOS 15 as the minimum. What it changes, how its
+> releases are built and their SHA-256: [NOTAVUS.md](NOTAVUS.md). The rest of this README is
+> upstream's.
+
 <p align="center">
   <img alt="PDFium binaries" src=".github/images/header.svg" />
 </p>
