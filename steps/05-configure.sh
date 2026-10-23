@@ -54,7 +54,7 @@ mkdir -p "$BUILD"
       if [ "$ENABLE_V8" == "true" ]; then
         echo 'ios_deployment_target = "17.4"'
       else
-        echo 'ios_deployment_target = "17.0"'
+        echo 'ios_deployment_target = "15.0"'
       fi
       echo "ios_enable_code_signing = false"
       echo "use_blink = true"
