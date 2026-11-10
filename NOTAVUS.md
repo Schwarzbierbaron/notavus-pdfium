@@ -86,8 +86,5 @@ Before a release, for each package:
 
 The scripts are under the MIT license of bblanchon/pdfium-binaries (`LICENSE`). Each
 package carries the license of PDFium and those of its components under `licenses/`,
-collected as upstream by `steps/08-licenses.sh`. HarfBuzz (MIT-Modern-Variant) and
-dragonbox (Apache-2.0 with LLVM exception or BSL-1.0) are compiled into the library too,
-but that step does not collect their texts (as upstream); they are
-`third_party/harfbuzz/src/COPYING` and `third_party/dragonbox/src/LICENSE-*` of PDFium's
-checkout.
+collected as upstream by `steps/08-licenses.sh`, among them HarfBuzz (MIT-Modern-Variant),
+dragonbox (Apache-2.0 with LLVM exception or BSL-1.0, both texts) and Highway (Apache-2.0).
